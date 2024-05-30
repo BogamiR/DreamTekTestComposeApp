@@ -1,0 +1,31 @@
+Documentation for Web KMM
+https://kotlinlang.org/docs/wasm-get-started.html#run-the-application
+
+
+Run the application
+	1) In Gradle section -> In composeApp | Tasks | kotlin browser, select and run the wasmJsBrowserRun task.
+		https://kotlinlang.org/docs/images/wasm-gradle-task-window.png
+
+	2) Or run in Android Studio terminal on local host:
+		./gradlew wasmJsBrowserRun -t
+
+
+Generate artifacts
+	It needs fot get all files to publicate on website
+
+	1) In Gradle section -> In composeApp | Tasks | kotlin browser, select and run the wasmJsBrowserDistribution task.
+		https://kotlinlang.org/docs/images/wasm-gradle-task-window-compose.png
+
+	2) Or run in Android Studio terminal:
+		./gradlew wasmJsBrowserDistribution
+
+
+	Once the application task completes, you can find the generated artifacts in the directory:
+	composeApp/build/dist/wasmJs/productionExecutable 
+
+	https://kotlinlang.org/docs/images/wasm-composeapp-directory.png
+
+
+
+Publish on GitHub pages
+	Copy all the contents in your "productionExecutable" directory into "docs" folder which we have in root project directory on the same level with "gradle", "composeApp" and "iosApp" directories.

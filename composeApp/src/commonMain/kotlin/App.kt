@@ -11,8 +11,8 @@ import androidx.compose.ui.Modifier
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import fiorry.composeapp.generated.resources.Res
-import fiorry.composeapp.generated.resources.compose_multiplatform
+import fiorrytestapp.composeapp.generated.resources.Res
+import fiorrytestapp.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
